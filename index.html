@@ -3,12 +3,12 @@ layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS.
 carpentry: "swc"    # what kind of Carpentry (must be either "dc" or "swc")
 venue: "Institute for Marine and Antarctic Studies"    # brief name of host site without address (e.g., "Euphoric State University")
-address: "Hobart Waterfront"    # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+address: "IMAS Building, Hobart Waterfront"    # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "au"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "-42.886048,147.335837"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
-humandate: "5 Aug - 30 Sep, 2016"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "Every Friday, 9:00am - 11:00am"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+humandate: "5 August - 30 September, 2016"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "Every Friday: 9:00am - 11:00am"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2016-08-05      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2016-09-30        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Damien Irving","Tom Remenyi","Mike Sumner"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
@@ -59,7 +59,11 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   the pitch.
 -->
 <p>
-  <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
+  During the months of August and September, 
+  <a href="http://datasciencehobart.github.io/">Data Science Hobart</a>
+  will be running its second ever 
+  <a href="{{site.swc_site}}">Software Carpentry</a> workshop.
+  Software Carpentry's mission
   is to help scientists and engineers get more research done in less
   time and with less pain by teaching them basic lab skills for
   scientific computing.  This hands-on workshop will cover basic
@@ -116,8 +120,8 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <p id="requirements">
   <strong>Requirements:</strong> Participants must bring a laptop with a
   Mac, Linux, or Windows operating sytem (not a tablet, Chromebook, etc.) that they have administrative privileges
-  on. They should have a few specific software packages installed (listed
-  <a href="#setup">below</a>). They are also required to abide by
+  on.  Prior to the first session, participants will be directed to install some (but not necessarily all) 
+  of the software packages listed <a href="#setup">below</a>. They are also required to abide by
   Software Carpentry's
   <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
 </p>
@@ -185,30 +189,28 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <p><a href='{{ site.swc_pre_survey }}{{ site.github.project_title }}'>Pre-workshop Survey</a></p>
 <p><a href='{{ site.swc_post_survey }}{{ site.github.project_title }}'>Post-workshop Survey</a></p>
 
+<p><em>Classes</em></p>
+
+<p>On the basis of the survey results, participants will be separated into a novice and intermediate group.
+The class schedule for those groups is as follows:</p>
+
 <div class="row">
-  <div class="col-md-6">
-    <h3>Day 1</h3>
+  <div class="col-md-12">
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
-    </table>
-  </div>
-  <div class="col-md-6">
-    <h3>Day 2</h3>
-    <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td><strong>Date</strong></td>  <td><strong>Novice topic</strong></td>  <td><strong>Intermediate topic</strong></td> </tr>
+      <tr> <td>Fri 05 Aug</td>  <td>Introduction and software installation</td>  <td>Introduction and software installation</td>
+      <tr> <td>Fri 12 Aug</td>  <td>TBA</td> <td>Python basics: a data analysis example (see <a href="{{site.swc_githubio}}/python-novice-inflammation/">Python lesson</a> 1)</td> </tr>
+      <tr> <td>Fri 19 Aug</td>  <td>TBA</td> <td>Python basics: loops, lists and conditionals (see <a href="{{site.swc_githubio}}/python-novice-inflammation/">Python lessons</a> 2-5)</td> </tr>
+      <tr> <td>Fri 26 Aug</td>  <td>TBA</td> <td>Functions (see <a href="{{site.swc_githubio}}/python-novice-inflammation/">Python lesson</a> 6)</td> </tr>
+      <tr> <td>Fri 02 Sep</td>  <td>TBA</td> <td>Testing and defensive programming (see <a href="http://katyhuff.github.io/python-testing/">lesson</a>)</td> </tr>
+      <tr> <td>Fri 09 Sep</td>  <td>TBA</td> <td>Command line programs (see <a href="{{site.swc_githubio}}/python-novice-inflammation/">Python lesson</a> 10)</td> </tr>
+      <tr> <td>Fri 16 Sep</td>  <td>TBA</td> <td>Debugging and profiling</td> </tr>
+      <tr> <td>Fri 23 Sep</td>  <td>TBA</td> <td>Data management (see <a href="http://damienirving.github.io/capstone-oceanography/">lesson</a>) </tr>
+      <tr> <td>Fri 30 Sep</td>  <td>TBA</td> <td>Version control using Git (see <a href="http://swcarpentry.github.io/git-novice/">lesson</a>) </tr>
     </table>
   </div>
 </div>
+
 
 <!--
   ETHERPAD
@@ -234,111 +236,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 
 <hr/>
 
-<!--
-  SYLLABUS
-
-  Show what topics will be covered.
-
-  1. If your workshop is R rather than Python, remove the comment
-     around that section and put a comment around the Python section.
-  2. Some workshops will delete SQL.
-  3. Please make sure the list of topics is synchronized with what you
-     intend to teach.
-  4. You may need to move the div's with class="col-md-6" around inside
-     the div's with class="row" to balance the multi-column layout.
-
-  This is one of the places where people frequently make mistakes, so
-  please preview your site before committing, and make sure to run
-  'tools/check' as well.
--->
-<h2 id="syllabus">Syllabus</h2>
-
-<div class="row">
-  <div class="col-md-6">
-    <h3 id="syllabus-shell">The Unix Shell</h3>
-    <ul>
-      <li>Files and directories</li>
-      <li>History and tab completion</li>
-      <li>Pipes and redirection</li>
-      <li>Looping over files</li>
-      <li>Creating and running shell scripts</li>
-      <li>Finding things</li>
-      <li><a href="{{site.swc_githubio}}/shell-novice/reference.html">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h3 id="syllabus-python">Programming in Python</h3>
-    <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_githubio}}/python-novice-inflammation/reference.html">Reference...</a></li>
-    </ul>
-  </div>
-  <!--
-  <div class="col-md-6">
-    <h3 id="syllabus-r">Programming in R</h3>
-    <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Using R from the command line</li>
-      <li><a href="{{site.swc_githubio}}/r-novice-inflammation/reference.html">Reference...</a></li>
-    </ul>
-  </div>
-  -->
-  <!--
-  <div class="col-md-6">
-    <h3 id="syllabus-matlab">Programming in MATLAB</h3>
-    <ul>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li><a href="{{site.swc_githubio}}/matlab-novice-inflammation/reference.html">Reference...</a></li>
-     </ul>
-   </div>
-   -->
-</div>
-
-<div class="row">
-  <div class="col-md-6">
-    <h3 id="syllabus-git">Version Control with Git</h3>
-    <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_githubio}}/git-novice/reference.html">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h3 id="syllabus-sql">Managing Data with SQL</h3>
-    <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_githubio}}/sql-novice-survey/reference.html">Reference...</a></li>
-    </ul>
-  </div>
-</div>
-
-<hr/>
 
 <!--
   SETUP
